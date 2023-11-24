@@ -1,0 +1,69 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}NEWS{% endblock %}
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goyard News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #c8e6c9; /* Green background color */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        article {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Goyard News</h1>
+        <p>The latest updates from the world of Goyard</p>
+    </header>
+
+    <article>
+
+
+        {% for el in news %}
+        <div class="alert alert-warning">
+            <h3>{{ el.tittle }}</h3>
+            <p>{{ el.full_text }}</p>
+        </div>
+        {% endfor %}
+         <h2>New Collection</h2>
+        <p>Goyard is thrilled to present its latest collection, inspired by classic style and contemporary trends. Each item in the collection boasts high quality and unique design.</p>
+    </article>
+
+    <article>
+        <h2>Events and Happenings</h2>
+        <p>Don't miss out on our upcoming events and gatherings. We invite you to participate in exclusive events where you can preview the collection, meet the designers, and immerse yourself in an atmosphere of style and elegance.</p>
+    </article>
+
+    <article>
+        <h2>Designer Interview</h2>
+        <p>Learn more about the Goyard design philosophy in our recent interview with the lead designer of the company. Discover how unique pieces are crafted and the inspiring stories behind each product.</p>
+    </article>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}GOYARD{% endblock %}
+
+{% block content %}
+    <header style="background-color: #1B5E20; padding: 20px; text-align: center;">
+        <h1>Welcome to Goyard</h1>
+    </header>
+
+    <a href="{% url 'about' %}" style="text-decoration: none; color: #ffffff; margin: 10px;">
+        <li style="list-style-type: none; display: inline-block; padding: 10px 20px; border-radius: 5px; background-color: #4CAF50; cursor: pointer; transition: background-color 0.3s ease;">
+            About us
+        </li>
+    </a>
+
+    <a href="{% url 'shop' %}" style="text-decoration: none; color: #ffffff; margin: 10px;">
+        <li style="list-style-type: none; display: inline-block; padding: 10px 20px; border-radius: 5px; background-color: #4CAF50; cursor: pointer; transition: background-color 0.3s ease;">
+            Shop now
+        </li>
+    </a>
+     <a href="{% url 'news_home' %}" style="text-decoration: none; color: #ffffff; margin: 10px;">
+        <li style="list-style-type: none; display: inline-block; padding: 10px 20px; border-radius: 5px; background-color: #4CAF50; cursor: pointer; transition: background-color 0.3s ease;">
+            News
+        </li>
+    </a>
+    <section style="margin: 20px; padding: 20px; background-color: #1B5E20; border-radius: 10px;">
+        <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i>add</button></li></a>
+        <h2>About Goyard</h2>
+        <p>
+            Goyard is a luxury brand known for its craftsmanship and timeless elegance.
+            Founded in 1853 in Paris, Goyard has been synonymous with luxury travel goods,
+            including luggage, bags, and accessories.
+        </p>
+    </section>
+
+    <section style="margin: 20px; padding: 20px; background-color: #1B5E20; border-radius: 10px;">
+        <h2>Explore Our Collections</h2>
+        <p>
+            Discover our exclusive collections crafted with precision and passion.
+            From classic trunks to modern handbags, Goyard offers a range of products
+            that blend tradition with contemporary style.
+        </p>
+    </section>
+
+    <section style="margin: 20px; padding: 20px; background-color: #1B5E20; border-radius: 10px;">
+        <h2>Experience Luxury</h2>
+        <p>
+            At Goyard, we believe in the art of luxury. Each piece is meticulously
+            crafted to reflect our commitment to quality and sophistication.
+            Explore the world of Goyard and indulge in timeless elegance.
+        </p>
+    </section>
+
+    <section style="margin: 20px; padding: 20px; background-color: #1B5E20; border-radius: 10px;">
+        <h2>Our Story</h2>
+        <p>
+            Founded in 1853 by François Goyard, the Maison Goyard has been synonymous
+            with luxury and sophistication for over a century. Explore our rich heritage
+            and discover the stories behind each Goyard creation.
+        </p>
+    </section>
+
+    <section style="margin: 20px; padding: 20px; background-color: #1B5E20; border-radius: 10px;">
+        <h2>Discover Goyard</h2>
+        <p>
+            Immerse yourself in the world of Goyard. From the iconic Goyardine canvas
+            to the hand-painted personalization, every detail tells a story of craftsmanship
+            and exclusivity.
+        </p>
+    </section>
+
+    <footer></footer>
+{% endblock %}
+
+
+
+

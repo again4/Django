@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now - Goyard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #2E7D32; /* Green background color */
+            color: #ffffff; /* White text color */
+            text-align: center; /* Center-align text */
+        }
+
+        header {
+            background-color: #1B5E20; /* Darker green for header background */
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff; /* White text color for links */
+        }
+
+        li {
+            list-style-type: none;
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #4CAF50; /* Green button color */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
+        }
+
+        h2 {
+            margin-top: 20px; /* Add some space above the heading */
+        }
+
+        .product {
+            margin: 20px;
+            padding: 20px;
+            background-color: #1B5E20; /* Darker green for product background */
+            border-radius: 10px;
+        }
+
+        .product img {
+            width: 200px; /* Set the initial width of the image */
+            height: auto; /* Maintain the aspect ratio */
+            margin-bottom: 10px; /* Add space between image and text */
+            transition: transform 0.3s ease; /* Smooth zoom on hover */
+        }
+
+        .product img:hover {
+            transform: scale(1.2); /* Zoom in on image hover */
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #1B5E20; /* Darker green for footer background */
+            padding: 10px;
+        }
+
+        li:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Shop Now</h1>
+    </header>
+
+    <a href="{% url 'about' %}"><li>About Us</li></a>
+    <a href="{% url 'shop' %}"><li>Shop Now</li></a>
+
+    <section>
+        <h2>Our Products</h2>
+        <div class="product">
+            <img src="{% static 'main/img/1.jpg' %}" alt="Goyard Bag">
+            <h3>Goyard Bag Green</h3>
+            <p>
+                Elevate your style with the Goyard Bag Green. This exquisite bag combines
+                classic design with a touch of modernity. Crafted with precision and attention
+                to detail, it's the perfect accessory for any occasion.
+            </p>
+            <p>Price: $1000.00</p>
+        </div>
+
+        <div class="product">
+            <img src="{% static 'main/img/2.jpg' %}" alt="Goyard BagPack">
+            <h3>Goyard BackPack</h3>
+            <p>This Cisalpin backpack is designed to accompany the modern traveler, but is also a faithful everyday companion. Its structured zipper closure system ensures a wide opening for easy access to all personal belongings.</p>
+            <p>Price: $1500.00</p>
+        </div>
+         <div class="product">
+              <img src="{% static 'main/img/3.jpg' %}" alt="Victoire Wallet">
+            <h3>Victoire Wallet</h3>
+            <p>The Victoire wallet is compact and ideal for organising cards, papers and notes. Its shape means it can be used in a bag and also a jacket or trouser pocket. It can also accommodate the Insert Victoire card wallet which slides inside the Victoire wallet to carry even more cards.</p>
+            <p>Price: $300.00</p>
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
+
+

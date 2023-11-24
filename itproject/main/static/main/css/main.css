@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #2E7D32;
+    color: #ffffff;
+    text-align: center;
+}
+
+header {
+    background-color: #1B5E20;
+    padding: 20px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #1B5E20;
+    border-radius: 10px;
+}
+
+button {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#shop-button {
+    margin-left: auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1B5E20;
+    padding: 10px;
+}
+
