@@ -4,8 +4,7 @@ import os
 import sys
 
 
-def mainpenis
-():
+def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'itproject.settings')
     try:
